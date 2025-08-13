@@ -1,0 +1,22 @@
+.HederMenu{
+    display: flex;
+    padding: 1vw;
+    justify-content: flex-start;
+}
+.HederMenu a{
+    color: #8BEBFF;
+    font-family: Impact;
+    padding: 0.8vw;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 2.8vw;
+}
+.HederMenu a:hover{
+    text-decoration: underline;
+}
+@media (max-width: 1000px) {
+    .HederMenu a{
+        font-size: 3.3vw;
+    }
+
+}

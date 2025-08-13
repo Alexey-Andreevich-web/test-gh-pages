@@ -1,23 +1,23 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-
-function Home() {
-  return <h1>Главная страница</h1>;
-}
-
-function About() {
-  return <h1>О нас</h1>;
-}
+import {HashRouter as Router, Route, Routes} from 'react-router-dom';
+import './App.css';
+import Home from './pages/Home';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Contacts from './pages/Contacts';
 
 function App() {
-  return (
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </Router>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/About" element={<About />} />
+                <Route path="/Portfolio" element={<Portfolio />} />
+                <Route path="/Contacts" element={<Contacts />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;
+

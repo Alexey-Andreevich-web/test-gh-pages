@@ -1,0 +1,27 @@
+.home{
+    margin: 0;
+    padding: 0;
+    height: 100vh;  /* Убедитесь, что body занимает всю высоту экрана */
+    background-image: url('../img/Fone.svg');
+    background-size: cover; /* Фотография будет адаптироваться по размеру экрана */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Убирает повторение фона */
+    background-attachment: fixed; /* При скроллинге фон остается на месте */
+}
+.bio_text{
+    margin: 5vw;
+    width: 40%;
+    font-size: 2vw;
+    color: #F4D6FF;
+    font-family: Candara;
+}
+.title{
+    color: #F2C2FF;
+    font-family: Impact;
+}
+@media (max-width: 1000px) {
+    .bio_text{
+        font-size: 3vw;
+    }
+
+}
